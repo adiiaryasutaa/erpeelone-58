@@ -1,9 +1,0 @@
-section#about p {
-  text-align: justify;
-}
-
-@media screen and (max-width: 455px) {
-  section#about p {
-    font-size: smaller;
-  }
-}
