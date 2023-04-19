@@ -1,0 +1,91 @@
+:root {
+  --card-per-row: 6;
+  --card-img-width: 8rem;
+}
+
+section#pengurus-kelas div.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#pengurus-kelas div.container div.card {
+  flex: calc((100% / var(--card-per-row)) - 1rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  background: #f0f0f0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transition: all 0.3s;
+}
+
+section#pengurus-kelas div.container div.card:not(:last-child) {
+  margin-right: 0.4em;
+}
+
+section#pengurus-kelas div.container div.card img.card-img-top {
+  width: var(--card-img-width);
+  margin-top: 1.8rem;
+}
+
+section#pengurus-kelas div.container div.card div.card-body {
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  :root {
+    --card-per-row: 3;
+  }
+
+  section#pengurus-kelas div.container div.card:not(:nth-child(4n - 1)) {
+    margin-right: 0.4em;
+  }
+
+  section#pengurus-kelas div.container div.card:nth-child(n + 4) {
+    margin-top: 0.4em;
+  }
+}
+
+@media screen and (max-width: 556px) {
+  :root {
+    --card-per-row: 2;
+  }
+
+  section#pengurus-kelas div.container div.card:nth-child(odd) {
+    margin-right: 0.4em;
+  }
+
+  section#pengurus-kelas div.container div.card:nth-child(even) {
+    margin-right: 0;
+  }
+
+  section#pengurus-kelas div.container div.card:nth-child(n + 3) {
+    margin-top: 0.4em;
+  }
+
+  section#pengurus-kelas div.container div.card:not(:nth-child(n + 3)) {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  :root {
+    --card-per-row: 1;
+    --card-img-width: 6rem;
+  }
+
+  section#pengurus-kelas div.container div.card {
+    flex-direction: row;
+    margin-right: 0 !important;
+    margin-top: 0.4em !important;
+  }
+
+  section#pengurus-kelas div.container div.card img.card-img-top {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  section#pengurus-kelas div.container div.card div.card-body {
+    text-align: start;
+  }
+}

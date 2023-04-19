@@ -1,0 +1,32 @@
+:root {
+  --grid-gap: 2rem;
+}
+
+footer#footer {
+  margin-top: calc(var(--section-gap) * 2);
+  background-color: #181818;
+}
+
+footer#footer div.container p {
+  text-align: justify;
+}
+
+footer#footer div.container div.row {
+  gap: var(--grid-gap);
+}
+
+footer#footer div.container form textarea {
+  height: 8em;
+}
+
+@media screen and (max-width: 1199px) {
+  footer {
+    margin-top: calc(var(--section-gap) * 1.2);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --grid-gap: 0;
+  }
+}

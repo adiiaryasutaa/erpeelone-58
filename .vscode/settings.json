@@ -1,0 +1,11 @@
+{
+    "editor.fontFamily": "Source code pro",
+    "editor.fontSize": 14,
+    "window.zoomLevel": 0,
+    "editor.tabSize": 2,
+    "editor.lineHeight": 26,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.iconTheme": "vscode-icons",
+}

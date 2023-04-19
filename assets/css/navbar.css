@@ -1,0 +1,28 @@
+:root {
+  --margin-sm: 1rem
+}
+
+nav {
+  transition: all 0.3s;
+  transition-timing-function: linear;
+}
+
+.navbar-brand {
+  margin-left: var(--margin-sm);
+}
+
+.navbar-toggler {
+  margin-right: var(--margin-sm);
+}
+
+@media screen and (max-width: 991px) {
+  nav div.other-nav {
+    border-top: 1px solid #6c757d;
+    margin-top: 3px;
+    padding-top: 3px;
+  }
+
+  nav ul.navbar-nav:first-child {
+    margin-top: 3px;
+  }
+}
